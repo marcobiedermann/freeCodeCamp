@@ -9,7 +9,8 @@
     "format": "prettier --write '**/*.{css,html,js,jsx,json,md,yml,yaml}'",
     "lint:js": "eslint '**/*.{js,jsx}'",
     "lint": "npm run lint:js",
-    "test": "npm run lint && jest"
+    "test": "jest",
+    "test:ci": "npm test && codecov"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@babel/preset-env": "^7.1.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "codecov": "^3.5.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^6.0.0",
