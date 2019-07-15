@@ -16,14 +16,20 @@ describe('truncateString()', () => {
   });
 
   it('truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length) should return "A-tisket a-tasket A green and yellow basket".', () => {
-    const expected = truncateString('A-tisket a-tasket A green and yellow basket', 'A-tisket a-tasket A green and yellow basket'.length);
+    const expected = truncateString(
+      'A-tisket a-tasket A green and yellow basket',
+      'A-tisket a-tasket A green and yellow basket'.length,
+    );
     const actual = 'A-tisket a-tasket A green and yellow basket';
 
     expect(expected).toBe(actual);
   });
 
   it('truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2) should return "A-tisket a-tasket A green and yellow basket".', () => {
-    const expected = truncateString('A-tisket a-tasket A green and yellow basket', 'A-tisket a-tasket A green and yellow basket'.length + 2);
+    const expected = truncateString(
+      'A-tisket a-tasket A green and yellow basket',
+      'A-tisket a-tasket A green and yellow basket'.length + 2,
+    );
     const actual = 'A-tisket a-tasket A green and yellow basket';
 
     expect(expected).toBe(actual);
