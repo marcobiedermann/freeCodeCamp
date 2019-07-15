@@ -4,7 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "lint:js": "eslint '**/*.js'",
+    "fix:js": "npm run lint:js -- --fix",
+    "fix": "npm run fix:js",
+    "format": "prettier --write '**/*.{css,html,js,jsx,json,md,yml,yaml}'",
+    "lint:js": "eslint '**/*.{js,jsx}'",
     "lint": "npm run lint:js",
     "test": "npm run lint && jest"
   },
@@ -18,7 +21,12 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.14.0",
-    "jest": "^23.6.0"
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   }
 }
