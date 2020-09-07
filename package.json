@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.4",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
     "babel-jest": "^26.3.0",
     "codecov": "^3.7.2",
     "eslint": "^7.7.0",
